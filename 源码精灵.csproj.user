@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>F:\系统文件\桌面\杂项\images\codemao\logo.png</Source>
+    <SmallTileSource>F:\系统文件\桌面\杂项\images\codemao\logo.png</SmallTileSource>
+    <MediumTileSource>F:\系统文件\桌面\杂项\images\codemao\logo.png</MediumTileSource>
+    <WideTileSource>F:\系统文件\桌面\杂项\images\codemao\logo.png</WideTileSource>
+    <LargeTileSource>F:\系统文件\桌面\杂项\images\codemao\logo.png</LargeTileSource>
+    <AppIconSource>F:\系统文件\桌面\杂项\images\codemao\logo.png</AppIconSource>
+    <SplashScreenSource>F:\系统文件\桌面\杂项\images\codemao\logo.png</SplashScreenSource>
+    <PackageLogoSource>F:\系统文件\桌面\杂项\images\codemao\logo.png</PackageLogoSource>
+    <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
+    <AppxShowAllApps>False</AppxShowAllApps>
+    <AppxBuildConfigurationSelection>x86|x64|arm</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DeviceId>30f105c9-681e-420b-a277-7c086ead8a4e</DeviceId>
+    <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <DeviceId>30f105c9-681e-420b-a277-7c086ead8a4e</DeviceId>
+    <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="源码精灵.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:源码精灵"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="White">
+        <Grid.ContextFlyout>
+            <MenuFlyout>
+                <MenuFlyoutItem Text="全屏" Click="MenuFlyoutItem_Click"/>
+                <MenuFlyoutItem Text="退出" Click="MenuFlyoutItem_Click_1"/>
+            </MenuFlyout>
+        </Grid.ContextFlyout>
+        <WebView RenderTransformOrigin="0.422,0.453"/>
+        <TextBlock x:Name="TextBlock" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Run Text="     加载失败,可能是因为无网络连接"/>
+        <LineBreak/>
+        <Run Text="检查网络连接后重新启动应用可能会解决问题"/>
+        </TextBlock>
+        <WebView x:Name="webView1" Source="https://trainer-pc.codemao.cn/" LoadCompleted="webView1_LoadCompleted"/>
+        <Button Content=" " Margin="0,0,0,0" Click="MenuFlyoutItem_Click" VerticalAlignment="Top" HorizontalAlignment="Left" IsTabStop="True" Opacity="0.1">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="F11"/>
+            </Button.KeyboardAccelerators>
+        </Button>
+    </Grid>
+</Page>
